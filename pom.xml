@@ -33,7 +33,9 @@
     </dependencies>
 
     <scm>
-        <developerConnection></developerConnection>
+        <developerConnection>scm:git:https://github.com/sorayajimenezcastillo/mb2g-release-plugin.git</developerConnection>
+        <url>https://github.com/sorayajimenezcastillo/mb2g-release-plugin</url>
+        <tag>HEAD</tag>
     </scm>
     <build>
         <extensions>
