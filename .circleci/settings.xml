@@ -1,0 +1,32 @@
+<servers>
+    <server>
+        <id>maven.oracle.com</id>
+        <username>sjc@computas.com</username>
+        <password>{b3OeR+L/NO0Hd+oSMDzANhy1uPGp+fF5q96txdqdHBs=}</password>
+        <configuration>
+            <basicAuthScope>
+                <host>ANY</host>
+                <port>ANY</port>
+                <realm>OAM 11g</realm>
+            </basicAuthScope>
+            <httpConfiguration>
+                <all>
+                    <params>
+                        <property>
+                            <name>http.protocol.allow-circular-redirects</name>
+                            <value>%b,true</value>
+                        </property>
+                    </params>
+                </all>
+            </httpConfiguration>
+        </configuration>
+    </server>
+    <server>
+        <id>packagecloud.release</id>
+        <password>${env.PCLOUD}</password>
+    </server>
+    <server>
+        <id>packagecloud.snapshot</id>
+        <password>${env.PCLOUD}</password>
+    </server>
+</servers>
